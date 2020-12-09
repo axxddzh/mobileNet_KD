@@ -106,7 +106,7 @@ with torch.no_grad():
 
 for epoch in range(10):
     # train
-    net_t.train()
+    net_s.train()
     running_loss = 0.0
     for step, data in enumerate(train_loader, start=0):
         images, labels = data
